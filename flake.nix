@@ -47,7 +47,7 @@
             file="src/pretty.ts"
             generated="build/$file.js"
 
-            npx tsc "$file" --outFile "$generated"
+            npx tsc "$file" --outFile "$generated" --target ESNext
             < "$generated" build-bookmarklet > "$(dirname "$file")/min.js"
           '';
         };
