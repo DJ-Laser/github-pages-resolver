@@ -1,0 +1,1 @@
+javascript:(function(){;alert(%22hi%22)%3B;})()
