@@ -20,7 +20,6 @@ async function checkRepoExists(owner: string, repo: string): Promise<boolean> {
       `https://api.github.com/repos/${owner}/${repo}`
     );
     const status = response.status;
-    alert(response.status);
 
     // 200 (Ok) or 304 (Not Modified) mean the repo exists
     return status == 200 || status == 304;
